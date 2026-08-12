@@ -28,8 +28,9 @@ Need to coordinate multiple items such as clothes, footwear, and accessories
 This problem can occur whenever users shop for fashion, particularly when they are purchasing outfits for occasions such as weddings, college events, festivals, parties, interviews, vacations, or everyday wear. Users may also face it whenever their style, budget, or requirements change.
 
 5. What happens if the problem remains unsolved?
-
+   
 If the problem remains unsolved, users may spend more time searching and comparing products, make unsuitable purchases, exceed their budget, or choose products that do not match well. This can lead to poor shopping experiences, dissatisfaction, unnecessary spending, and difficulty finding personalized fashion choices.
+
 ---
 
 ## 2. Identify the Affected Users
