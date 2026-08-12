@@ -1,0 +1,362 @@
+# =============================================================================
+# AI-Assisted Engineering Project Blueprint
+# Global Git Ignore
+# =============================================================================
+#
+# Purpose
+# -------
+# Repository-wide exclusions for generated files, local environments, caches,
+# temporary files, IDE metadata, secrets and other artefacts that should never
+# be committed to source control.
+#
+# IMPORTANT
+# ---------
+# This file is intentionally global to the repository.
+#
+# Do NOT add project-specific exclusions here unless the exclusion is genuinely
+# applicable across the entire repository.
+#
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Operating System Artefacts
+# -----------------------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+.Trash-*
+
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python build artefacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Python packaging metadata
+pip-wheel-metadata/
+*.egg
+MANIFEST
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Type-checking / linting caches
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Test / benchmark caches
+.hypothesis/
+
+
+# -----------------------------------------------------------------------------
+# Virtual Environments
+# -----------------------------------------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Common local environment names
+.python-version
+
+
+# -----------------------------------------------------------------------------
+# Environment Variables / Secrets
+# -----------------------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local credentials / tokens
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+
+
+# -----------------------------------------------------------------------------
+# IDE / Editor Metadata
+# -----------------------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio
+.vs/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+
+# -----------------------------------------------------------------------------
+# Build / Generated Documentation
+# -----------------------------------------------------------------------------
+
+# Generic build output
+_build/
+_site/
+site/
+
+# MkDocs
+mkdocs_build/
+public/
+
+# Sphinx
+docs/build/
+docs/_build/
+
+# Generated HTML / documentation output
+*.html.tmp
+
+
+# -----------------------------------------------------------------------------
+# Logs
+# -----------------------------------------------------------------------------
+
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# -----------------------------------------------------------------------------
+# Temporary Files
+# -----------------------------------------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+*.orig
+
+# Temporary editor files
+.#*
+#*#
+
+
+# -----------------------------------------------------------------------------
+# Local Databases / Runtime State
+# -----------------------------------------------------------------------------
+
+*.sqlite
+*.sqlite3
+*.db
+
+# Runtime state
+*.pid
+*.pid.lock
+
+
+# -----------------------------------------------------------------------------
+# Node / JavaScript Tooling
+# -----------------------------------------------------------------------------
+
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+
+# Bundled / generated frontend output
+coverage/
+.parcel-cache/
+.next/
+.nuxt/
+.cache/
+
+
+# -----------------------------------------------------------------------------
+# Jupyter / Interactive Development
+# -----------------------------------------------------------------------------
+
+.ipynb_checkpoints/
+
+# Jupyter runtime files
+*.ipynb_checkpoints
+
+
+# -----------------------------------------------------------------------------
+# Data Science / ML Generated Artefacts
+# -----------------------------------------------------------------------------
+
+# Large generated datasets should normally be stored outside Git.
+# Keep source/sample datasets explicitly tracked when required.
+*.parquet
+*.feather
+
+# Model artefacts
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+
+# Experiment outputs
+mlruns/
+mlartifacts/
+wandb/
+tensorboard/
+
+
+# -----------------------------------------------------------------------------
+# Local AI / LLM Tooling
+# -----------------------------------------------------------------------------
+
+# Local model caches
+.models/
+model-cache/
+models-cache/
+
+# Local AI application state
+.llm/
+.ollama/
+
+# Do not commit locally generated prompt/session state unless explicitly needed.
+.ai-cache/
+
+
+# -----------------------------------------------------------------------------
+# Archives / Generated Packages
+# -----------------------------------------------------------------------------
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+
+# -----------------------------------------------------------------------------
+# OS / Application Temporary Directories
+# -----------------------------------------------------------------------------
+
+tmp/
+temp/
+
+
+# -----------------------------------------------------------------------------
+# Local Tool State
+# -----------------------------------------------------------------------------
+
+# Generic local configuration/state directories
+.local/
+.local-state/
+
+# Tool-specific caches
+.cache/
+
+
+# -----------------------------------------------------------------------------
+# Personal / Machine-Specific Files
+# -----------------------------------------------------------------------------
+
+# Local notes that may contain machine-specific or private information
+.local-notes/
+.private/
+
+# Machine-specific configuration
+local.config
+local.settings
+
+# =============================================================================
+# Facilitator / Trainer Materials
+# =============================================================================
+# Trainer-facing workshop materials are maintained separately from
+# student-facing project artefacts and must not be committed to this repository.
+#
+# Keep the facilitator directory locally for future trainer development.
+facilitator/
+
+
+# =============================================================================
+# IMPORTANT EXCEPTIONS
+# =============================================================================
+#
+# The following SHOULD remain trackable unless explicitly excluded elsewhere:
+#
+# - *.md
+# - *.rst
+# - *.txt
+# - *.yml / *.yaml
+# - *.json
+# - *.py
+# - *.sh
+# - *.bat
+# - *.ps1
+# - Makefile
+# - README files
+# - Documentation
+# - Templates
+# - Checklists
+# - Examples
+#
+# Do not add broad patterns such as:
+#
+#   *.json
+#   *.yaml
+#   *.txt
+#   docs/
+#   scripts/
+#
+# because these are legitimate repository artefacts.
+#
+# =============================================================================
+# End of File
+# =============================================================================
+

@@ -1,0 +1,142 @@
+# =============================================================================
+# AI-Assisted Engineering Project Blueprint
+# Global Python Requirements
+# =============================================================================
+#
+# Purpose
+# -------
+# Global Python dependencies required by the repository for documentation,
+# Markdown processing, configuration handling, validation, and repository
+# support tooling.
+#
+# IMPORTANT
+# ---------
+# This is the GLOBAL requirements file.
+#
+# Do NOT add dependencies that belong exclusively to a specific project,
+# application, experiment, AI/ML implementation, cloud platform, or product.
+# Such dependencies must be maintained by the corresponding project.
+#
+# Design Principles
+# -----------------
+# - Keep the global dependency footprint small.
+# - Prefer mature open-source tooling.
+# - Avoid unnecessary runtime dependencies.
+# - Avoid cloud-provider-specific packages globally.
+# - Avoid paid-service SDKs globally.
+# - Keep documentation tooling separate from application tooling.
+# - Use version ranges rather than blindly copying `pip freeze`.
+#
+# Python
+# ------
+# Target: Python 3.11+
+#
+# Recommended setup:
+#
+#   python -m venv .venv
+#
+# Git Bash / Windows:
+#
+#   source .venv/Scripts/activate
+#
+# Linux / macOS:
+#
+#   source .venv/bin/activate
+#
+# Installation:
+#
+#   python -m pip install --upgrade pip
+#   pip install -r requirements.txt
+#
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Markdown Processing
+# -----------------------------------------------------------------------------
+# CommonMark-compatible Markdown parser and renderer.
+markdown>=3.8,<4.0
+
+# -----------------------------------------------------------------------------
+# YAML / Configuration
+# -----------------------------------------------------------------------------
+# YAML support for front matter, configuration and structured metadata.
+PyYAML>=6.0,<7.0
+
+# -----------------------------------------------------------------------------
+# Documentation Generation
+# -----------------------------------------------------------------------------
+# Static documentation site generator.
+mkdocs>=1.6,<2.0
+
+# -----------------------------------------------------------------------------
+# Markdown Extensions
+# -----------------------------------------------------------------------------
+# Enhanced Markdown features including admonitions, task lists, tables,
+# fenced code blocks and other documentation-oriented extensions.
+pymdown-extensions>=10.16,<11.0
+
+# -----------------------------------------------------------------------------
+# Documentation Theme
+# -----------------------------------------------------------------------------
+# Material theme for MkDocs documentation sites.
+mkdocs-material>=9.6,<10.0
+
+# -----------------------------------------------------------------------------
+# Terminal / Repository Utilities
+# -----------------------------------------------------------------------------
+# Portable terminal colour support for Windows and Unix-like environments.
+colorama>=0.4,<1.0
+
+# -----------------------------------------------------------------------------
+# Structured Data Validation
+# -----------------------------------------------------------------------------
+# Typed validation for structured configuration and repository-support tooling.
+pydantic>=2.10,<3.0
+
+# =============================================================================
+# Dependency Management Policy
+# =============================================================================
+#
+# 1. Every global dependency must have a repository-wide purpose.
+# 2. Project-specific dependencies belong in that project's requirements file.
+# 3. Experimental AI/ML libraries must not be added globally without
+#    repository-wide justification.
+# 4. Cloud SDKs must not be added globally.
+# 5. Vendor-specific AI API SDKs must not be added globally.
+# 6. Heavy dependencies should be avoided unless clearly justified.
+# 7. New dependencies should be reviewed before being added.
+# 8. Dependency upgrades should be validated through the repository workflow.
+# 9. Security vulnerabilities should be reviewed during maintenance.
+# 10. Do not use `pip freeze` output as the curated global requirements file.
+#
+# =============================================================================
+# Project-Specific Dependencies
+# =============================================================================
+#
+# Future project structure should keep dependencies local, for example:
+#
+#   projects/
+#   ├── project-a/
+#   │   └── requirements.txt
+#   └── project-b/
+#       └── requirements.txt
+#
+# This prevents unrelated projects from becoming coupled through global
+# dependency management.
+#
+# =============================================================================
+# Reproducibility
+# =============================================================================
+#
+# This file defines supported dependency ranges.
+#
+# A separately generated lock/snapshot may be used when an exact environment
+# must be reproduced.
+#
+# Do not manually replace this curated file with a complete `pip freeze`
+# listing, because that would include transitive and environment-specific
+# packages.
+#
+# =============================================================================
+# End of File
+# =============================================================================
