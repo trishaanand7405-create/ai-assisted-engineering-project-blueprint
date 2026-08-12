@@ -1,33 +1,35 @@
-# Problem Statement
+# AI-Based Fashion Recommendation System
 
-> **Start with the problem. Do not start with the technology.**
-
-A Product begins with a meaningful problem or opportunity.
-
-Before selecting technologies, models, frameworks or architectures, the team must understand **what problem it is trying to solve and why solving it matters**.
 
 ---
 
 ## 1. Identify the Problem
 
-Describe the problem clearly and specifically.
+1. What is happening today?
 
-Ask:
+Today, people often have to search through many fashion products across online shopping platforms to find suitable clothes and accessories. Most recommendation systems primarily suggest individual products based on browsing history, purchases, or popularity rather than understanding the user's occasion, budget, style, and need for a complete outfit.
 
-* What is happening today?
-* What is difficult, inefficient, expensive, slow or unreliable?
-* Who experiences the problem?
-* How frequently does it occur?
-* What happens if the problem remains unsolved?
+2. What is difficult, inefficient, expensive, slow or unreliable?
 
-Avoid vague statements such as:
+Finding a suitable complete outfit can be time-consuming and difficult. Users may need to compare multiple products, check prices and discounts, and manually decide whether different items match each other. It can also be difficult to stay within a fixed budget while finding an outfit that suits the occasion and personal preferences.
 
-> "We want to build an AI application."
+3. Who experiences the problem?
 
-Instead describe the actual problem:
+The problem is mainly experienced by online fashion shoppers, especially users who:
 
-> "Users currently spend significant time manually analysing incoming data before making a decision."
+Have limited time for shopping
+Are unsure about what to wear for a particular occasion
+Have a fixed budget
+Want personalized fashion suggestions
+Need to coordinate multiple items such as clothes, footwear, and accessories
 
+4. How frequently does it occur?
+
+This problem can occur whenever users shop for fashion, particularly when they are purchasing outfits for occasions such as weddings, college events, festivals, parties, interviews, vacations, or everyday wear. Users may also face it whenever their style, budget, or requirements change.
+
+5. What happens if the problem remains unsolved?
+
+If the problem remains unsolved, users may spend more time searching and comparing products, make unsuitable purchases, exceed their budget, or choose products that do not match well. This can lead to poor shopping experiences, dissatisfaction, unnecessary spending, and difficulty finding personalized fashion choices.
 ---
 
 ## 2. Identify the Affected Users
